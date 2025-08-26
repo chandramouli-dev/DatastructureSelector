@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DS Selector with Explanation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Data Structure Selector</h1>
+  <div class="container">
+    <label for="size">Data Size:</label>
+    <select id="size">
+      <option value="fixed">Fixed size</option>
+      <option value="dynamic">Dynamic size</option>
+    </select>
+
+    <label for="access">Access Requirement:</label>
+    <select id="access">
+      <option value="fast">Fast random access</option>
+      <option value="sequential">Sequential access is fine</option>
+    </select>
+
+    <label for="insert">Insert/Delete Frequency:</label>
+    <select id="insert">
+      <option value="rare">Rare</option>
+      <option value="frequent">Frequent</option>
+    </select>
+
+    <label for="order">Is Order Important?</label>
+    <select id="order">
+      <option value="no">No</option>
+      <option value="yes">Yes (sorted / hierarchical)</option>
+    </select>
+
+    <label for="priority">Need Prioritization?</label>
+    <select id="priority">
+      <option value="no">No</option>
+      <option value="yes">Yes</option>
+    </select>
+
+    <label for="relationship">Relationships between elements?</label>
+    <select id="relationship">
+      <option value="no">No</option>
+      <option value="yes">Yes (network/graph)</option>
+    </select>
+
+    <button onclick="suggestDS()">Suggest Data Structure</button>
+
+    <div id="result" class="result"></div>
+    <div id="explanation" class="explanation"></div>
+  </div>
+    
+</body>
+</html>
